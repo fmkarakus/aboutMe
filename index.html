@@ -2,43 +2,51 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name='viewport'
-      content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <title>Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
   </head>
   <body>
-    <div class="page">
-      <header>
-        <nav class='menu-container'>
-          <div class='menu'>
-            <div class='home'>Home</div>
-            <div class='albania'>About Albania</div>
-            <div class='photos'>Photos</div>
-          </div>
-        </nav>
-      </header>
-      <article >
-        <div class="main-photo">
-          <img src='images/???.svg'/>
+    <div class='page'>
+    <header class="header">
+      <h1>Fatih Karakus</h1>
+      <nav class="menu">
+        <div class="menu-item">
+          <a href="#">Home</a>
         </div>
-        <div class="main-text">
-          <h1>Hi, my name is Fatih</h1>
-
-          <p>I studied Mathematics in university. I worked for many years as a mathematics teacher and school administator.
+        <div class="menu-item">
+          <a href="albania.html">FAQ Albania</a>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <div class="withPhoto section">
+        <div class="picture">
+          <img src="images/1s.jpeg" alt="profile photo">
+        </div>
+        <div class="about">
+          <h2>Hi, my name is Fatih!</h2>
+          <p> I am from Turkey. I studied mathematics in university. I worked for many years as a mathematics teacher and school administator in Albania.
             I have also worked in Economics department of a university. I gave lessons and did some academic work there.</p>
 
           <p>I came to Belgium 3 years ago. During this time, I tried to learn Dutch and followed some bootcamps and IT trainings. </p>
 
           <p>I am a family man, have two sons. I spend most of my free time with/for my family.
-            We like to travel and dicover new places, although we didn't do that so much.</p>
+            We like to travel and discover new places.</p>
 
           <p>We lived for many years in Albania. People ask me about traveling there,
-              so I prepared a frequently asked questions page for Albania and put some photos</p>
-         </div>
-         <footer>
-            <p>&copy; 2022</p>
-         </footer>
-      </article>
+              so I prepared a <a href="albania.html">frequently asked questions page for Albania</a>.</p>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="contact footer-item">
+        <h3>Contact</h3>
+        <a href="mailto:fatihmehmetkarakus@gmail.com">Send me an email</a><br>
+        <a href="https://github.com/fmkarakus">Github</a>
+      </div>
+    </footer>
     </div>
   </body>
 </html>

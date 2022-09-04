@@ -3,54 +3,131 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: #FFEEAF;
+}
 
-.page {
+.page{
+  background-color: #FFAE6D;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 9px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.header {
+  background-color: #7FB77E;
+  color: #134a2e;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 10px 20px 10px;
+  height: initial;
+  margin-bottom: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+.menu-item {
+  display: flex;
+  margin: 10px;
+}
+
+a {
+  color: #134a2e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #645CAA;
+}
+.main-container {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-section, article, aside, footer, header, nav {
-  display: block;
+.withPhoto
+ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  background-color: #D6CDA4;
+  margin-bottom: 20px;
+  padding: 0 20px 0 20px;
+  border-radius: 6px;
+  padding: 20px;
 }
 
 
+.picture img {
+  border-radius: 50%;
+  border: 2px solid #cbf5f7;
+}
+.about
+.question {
+  align-items: flex-start;
+}
 
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
-  body {
-    background-color: #F09A9D; /* Red */
+
+.footer {
+  background-color: #7FB77E;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+@media only screen and (min-width: 700px) {
+  .menu {
+    width: 30%;
+    justify-content: flex-end;
   }
-}
-
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  .sign-up,
-  .feature-1,
-  .feature-2,
-  .feature-3 {
-    width: 50%;
-  }
-}
-
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
-  .page {
-    width: 960px;
+  .page{
+    max-width:1200px;
     margin: 0 auto;
   }
-  .feature-1,
-  .feature-2,
-  .feature-3 {
-    width: 33.3%;
+
+  .withPhoto {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    text-align: left;
   }
-  .header {
-    height: 400px;
-  }
-  .sign-up {
-  height: 200px;
-  order: 1;
-}
-.content {
-  order: 2;
-}
 }
